@@ -6,7 +6,7 @@ import javax.persistence.EntityManager;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.demo.model.User;
+import com.demo.dto.User;
 
 public class UserDaoImpl implements UserDao {
 	

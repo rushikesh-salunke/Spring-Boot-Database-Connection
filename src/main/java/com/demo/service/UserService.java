@@ -2,16 +2,17 @@ package com.demo.service;
 
 import java.util.List;
 
-import com.demo.model.User;
+import com.demo.dto.User;
+import com.demo.model.UserModel;
 
 public interface UserService {
 	
 	List<User> getUserList();
 	
-	User getUser(User user);
+	User saveUser(UserModel userModel);
 	
-	Boolean saveUser(User user);
+	UserModel getUser(Integer id);
 	
-	Boolean deleteUser(User user);
+	Boolean deleteUser(String id);
 
 }
